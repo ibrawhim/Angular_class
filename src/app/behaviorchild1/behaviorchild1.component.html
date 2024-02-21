@@ -1,0 +1,9 @@
+<div class="container cursor-pointer">
+    <div *ngFor="let list of behavior_array" class="card shadow mb-4 cursor-pointer" (click)="sendlist(list)">
+        <div class="card-body">
+            <h5 class="card-title">{{list.firstname}} {{list.lastname}}</h5>
+            <p class="card-text">Email: {{list.email}}</p>
+            <p class="card-text">Age: {{list.age}}</p>
+        </div>
+    </div>
+</div>
